@@ -24,17 +24,23 @@ Also added the test case .docx file.
 
 Download project directory
 
-1. In the project directory, install project dependencies:
+1. Enter the project directory:
+   ```bash
+   cd d\&d_qa_assignment/
+   ```
+
+
+2. In the project directory, install project dependencies:
    ```bash
    npm install
    ```
 
-2. Open the Cypress Test Runner from the project directory:
+3. Open the Cypress Test Runner from the project directory:
    ```bash
    npm run cy:open
    ```
 
-3. From the Cypress interface, select one of the following spec files to run:
+4. From the Cypress interface, select one of the following spec files to run:
    - `cypress/e2e/test_1_customer_service.cy.js`
    - `cypress/e2e/test_2_cart_flow.cy.js`
 
