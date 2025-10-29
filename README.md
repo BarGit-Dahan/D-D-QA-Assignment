@@ -22,9 +22,9 @@ Also added the test case .docx file.
 
 ## How to Run
 
-First extract the files from the .zip
+Download project directory
 
-1. Install project dependencies:
+1. In the project directory, install project dependencies:
    ```bash
    npm install
    ```
