@@ -1,0 +1,17 @@
+{
+  "name": "cypress-qa-assignment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Home assignment implemented with Cypress (E2E tests for Amazon tasks 1+2)",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run",
+    "verify": "cypress verify"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.0.0",
+    "cypress": "^15.5.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
