@@ -16,6 +16,8 @@ The test suite includes two primary tasks:
 
 Each test dismisses overlays, validates UI states, and performs assertions to verify correct cart functionality.
 
+Also added the test case .docx file.
+
 ---
 
 ## How to Run
