@@ -6,7 +6,7 @@ This project contains end-to-end Cypress tests that automate key Amazon cart wor
 
 The test suite includes two primary tasks:
 
-- **Task 1** – Baseline product search and add-to-cart flow.  
+- **Task 1** – Flow to "Track Your Package" page.  
 - **Task 2** – Complete cart flow:
   1. Add the Bostitch Electric Pencil Sharpener.  
   2. Add the iBayam Scissors with the specified color (“Yellow, Grey, Blue”).  
@@ -20,19 +20,21 @@ Each test dismisses overlays, validates UI states, and performs assertions to ve
 
 ## How to Run
 
+First extract the files from the .zip
+
 1. Install project dependencies:
    ```bash
    npm install
    ```
 
-2. Open the Cypress Test Runner:
+2. Open the Cypress Test Runner from the project directory:
    ```bash
    npm run cy:open
    ```
 
 3. From the Cypress interface, select one of the following spec files to run:
-   - `cypress/e2e/task1_search_and_add.cy.js`
-   - `cypress/e2e/task2_cart_flow.cy.js`
+   - `cypress/e2e/test_1_customer_service.cy.js`
+   - `cypress/e2e/test_2_cart_flow.cy.js`
 
 > **Tip:** Running in headed mode (default for `cy:open`) is recommended for Amazon login stability.
 
@@ -43,11 +45,17 @@ Each test dismisses overlays, validates UI states, and performs assertions to ve
 ```
 cypress/
   e2e/
-    task1_search_and_add.cy.js      # Task 1: Basic add-to-cart flow
-    task2_cart_flow.cy.js           # Task 2: Full login and cart management flow
+    test_1_customer_service.cy.js     # Task 1: Flow to "Track Your Package" page 
+    test_2_cart_flow.cy.js          # Task 2: Full login and cart management flow
   support/
     e2e.js
+    commands.js
+  fixtures/
+  	example.json
 cypress.config.js
+cypress.env.json
+node_modules
+package-lock.json
 package.json
 README.md
 ```
@@ -63,7 +71,7 @@ README.md
 
 ---
 
-**Author:** Itay  
+**Author:** Bar Avraham Dahan  
 **Framework:** Cypress  
 **Language:** JavaScript (ES6)  
 **Purpose:** Automated validation of Amazon cart operations and login flow.
